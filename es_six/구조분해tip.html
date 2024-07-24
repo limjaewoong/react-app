@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+
+            //TIP1 반복문에서 구조 분해 할당하기
+            // 배열 for문은 for of
+            // 객체 for문은 for in
+            const users = [
+                {name: '철수', age : 25}
+                ,{name: '영희', age : 23}
+                ,{name: '길동이', age : 35}
+                ,{name: '도우너', age : 15}
+            ]
+            
+            users.forEach(({age}) => {
+                console.log(age);
+            });
+
+            for(const {name} of users){
+                console.log(name);
+            }
+
+            //TIP2
+            
+
+            
+        </script>
+    </head>
+    <body>
+
+        <!-- <h1>소플의 블로그에 오신 여러분 환영합니다.</h1>
+        <div id="root"></div> -->
+    </body>
+</html>

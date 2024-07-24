@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+
+            //구조 분해 할당
+            // ... 스프레드 연산자 (나머지 값들 할당)
+            const animals = ['강아지','고양이','오리','송아지','뱀','사자','호랑이'];
+
+            const [dog, , duck = '꽥꽥', cow = '소', ...rest] = animals;
+            console.log(dog,duck,cow);
+            console.log('나머지: '+rest);
+
+            //TIP1 - 변수 값 교환하기
+            let a = 1;
+            let b = 2;
+            
+            // let temp = a;
+            // a = b;
+            // b= temp;
+            // console.log(a,b);
+
+            [a,b] = [b,a];
+            console.log(a,b);
+            </script>
+    </head>
+    <body>
+
+        <!-- <h1>소플의 블로그에 오신 여러분 환영합니다.</h1>
+        <div id="root"></div> -->
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+
+            //객체 분해 할당
+            // ... 스프레드 연산자 (나머지 값들 할당)
+            const animals = {
+                dogs :  '강아지'
+                ,cat : '고냥이'
+                ,duck : '오리'
+                ,tiger : '호랑이'
+                ,lion :  '사자'
+            }
+
+            const dogs = '개냥이';
+
+            let {dogs: dogName, duck, cat = '냐옹이', ...aa} = animals;
+
+            console.log(dogName, duck, cat, aa.tiger);
+            </script>
+    </head>
+    <body>
+
+        <!-- <h1>소플의 블로그에 오신 여러분 환영합니다.</h1>
+        <div id="root"></div> -->
+    </body>
+</html>
