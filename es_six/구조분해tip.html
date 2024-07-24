@@ -21,10 +21,33 @@
                 console.log(name);
             }
 
-            //TIP2
-            
+            for(let i=0; i < users.length; i++){
+                console.log("for2:"+users[i].name);
+            }
+       
+            const userData = {
+                name : '김철수'
+                ,age : 40
+                ,addr : '서울특별시'
+                ,addr2 : '111'
+            }
+            //객체 foreach 사용
+            Object.keys(userData).forEach(keys =>{
+                console.log(userData[keys]);
+            });
 
+            for(const key in userData){
+                console.log(userData[key]);
+            }
+
+            const newUser = {name : '철수', age : 25};
+            //TIP2 함수의 매개변수로 전달된 객체를 구조 분해 할당
+            const printUser = ({name, age}) =>{
+                console.log(name+'님은'+ age +'살 이예요!');
+            }
             
+            printUser(newUser);
+
         </script>
     </head>
     <body>
