@@ -12,6 +12,7 @@ nvm install 18.17.1(버전)
 nvm use 18.17.1(버전 선택)
 node -v    node 버전 확인
 npm -v     npm 버전 확인
+npx --version npx 버전 확인
 
 2) 리액트란?
 - 사용자 인터페이스를 만들기위한 자바스크립트 UI라이브러리
