@@ -9,6 +9,9 @@ signin(로그인)
 {
     code: "OK"
     message: "Success"
+    token : "jwt.."
+    expiredDate : number
+
 }
 실패: 401
 {
@@ -22,8 +25,36 @@ signin(로그인)
 }
 ===========================================================
 signup(회원가입)
+request
+{
+    *email: string
+    *password: string
+    *nickname: string
+    *telNumber: string
+    *address: string
+    addressDetail: string
 
+}
 
+response
+성공: 200
+{
+    code: "OK"
+    message: "Success"
+    token : "jwt.."
+    expiredDate : number
+
+}
+실패: 401
+{
+    code: "SU"
+    message: "sign in failed"
+}
+데이터베이스 에러: 500
+{
+    code: "SF"
+    message: datebase in error"
+}
 
 ===========================================================
 weeklyTop3(주간 상위3 게시물)
