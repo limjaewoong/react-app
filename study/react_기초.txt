@@ -26,6 +26,14 @@ npx --version npx 버전 확인
 - 방대한 스터디 양
 - 높은 상태관리 복잡도
 
+* React project 생성
+- npx create-react-app board-front --template typescript
+- npx create-react-app . -template typescript	//현재폴더에 생성
+* next project 생성
+-npx create-next-app .
+-npx create-next-app board-front
+
+
 
 
 
