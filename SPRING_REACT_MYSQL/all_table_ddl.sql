@@ -84,3 +84,8 @@ ALTER TABLE comment
   ADD CONSTRAINT FK_user_TO_comment
     FOREIGN KEY (user_email)
     REFERENCES user (email);
+
+
+CREATE USER 'developer'@'%' IDENTIFIED by '1234';
+
+GRANT ALL ON board.* TO 'developer'@'%'
