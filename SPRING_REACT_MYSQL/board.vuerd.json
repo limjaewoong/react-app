@@ -3,7 +3,7 @@
     "version": "2.2.13",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -1008.0000281524668,
+    "scrollTop": -882,
     "scrollLeft": -394.6015625,
     "zoomLevel": 0.8,
     "show": {
@@ -669,10 +669,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 738.4261362410141,
-          "top": 1175.580126124026,
-          "zIndex": 6,
+          "active": true,
+          "left": 730.9261,
+          "top": 1249.3301,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 71.5703125,
           "color": "#FF0000"
@@ -781,7 +781,7 @@
           "active": false,
           "left": 794.298588021984,
           "top": 184.97641820664074,
-          "zIndex": 3,
+          "zIndex": 7,
           "widthName": 63.775390625,
           "widthComment": 97.5703125,
           "color": "#4CAF50"
@@ -919,8 +919,8 @@
           "columnIds": [
             "f120e65b-bcf7-4493-b804-829502a74554"
           ],
-          "x": 986.4891245222641,
-          "y": 1175.580126124026,
+          "x": 978.98908828125,
+          "y": 1249.3301,
           "direction": "top"
         },
         "constraintName": "fk_board_to_comment",
@@ -945,8 +945,8 @@
           "columnIds": [
             "2c2b062a-a039-4704-be10-9b196b545897"
           ],
-          "x": 1234.552112803514,
-          "y": 1261.330126124026,
+          "x": 1227.0520765625001,
+          "y": 1335.0801,
           "direction": "right"
         },
         "constraintName": "fk_user_to_comment",
