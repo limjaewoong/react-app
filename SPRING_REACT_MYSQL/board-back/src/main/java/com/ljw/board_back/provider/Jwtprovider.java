@@ -18,7 +18,7 @@ public class Jwtprovider {
     @Value("${secret-key}")
     private String secretKey;
 
-    
+
     public String create(String email){
         Date expireDate = Date.from(Instant.now().plus(1,ChronoUnit.HOURS));
 
@@ -34,6 +34,8 @@ public class Jwtprovider {
     public String validate(String jwt){
 
         Claims claims = null;
+
+        
 
         try {
             claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJwt(jwt).getBody();
