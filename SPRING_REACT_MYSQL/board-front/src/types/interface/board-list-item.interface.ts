@@ -1,0 +1,14 @@
+interface BoardListItem {
+    boardNumber: number;
+    title: string;
+    content: string;
+    boardTitleImage: string | null;
+    favoriteCount: number;
+    commentCount: number;
+    viewCount: number;
+    writeDateTime: string;
+    writerNickname: string;
+    writerProfileImage: string | null;
+}
+
+export default BoardListItem;
