@@ -18,7 +18,7 @@ export default function BoardItem({boardListItem}:Props) {
         ,favoriteCount
         ,commentCount
         ,viewCount
-        ,writeDateTime
+        ,writeDateTime   
         ,writerNickname
         ,writerProfileImage} = boardListItem;
 
@@ -55,7 +55,6 @@ export default function BoardItem({boardListItem}:Props) {
                 <div className='board-list-item-image' style={{backgroundImage: `url(${boardTitleImage})`}}></div>
             </div>
             )}
-            
         </div>
     )
 }
