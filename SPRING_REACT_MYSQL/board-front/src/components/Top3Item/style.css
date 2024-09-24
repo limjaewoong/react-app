@@ -1,8 +1,8 @@
 .top-3-list-item{
     border-radius: 10px;
     padding: 24px;
-    width: calc(384px -24px -24px);
-    height: calc(508px -24px -24px);
+    width: 336px;
+    height: 460px;
     display: flex;
     flex-direction: column-reverse;
     background-color: rgba(0,0,0,0.5);

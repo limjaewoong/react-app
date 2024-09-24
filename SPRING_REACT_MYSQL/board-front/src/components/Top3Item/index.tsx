@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css';
 import defaultProfileImage from 'assets/images/default_avatar_profile.jpg';
 import { BoardListItem } from 'types/interface';
+import { useNavigate } from 'react-router-dom';
 
 interface Props{
     top3ListItem : BoardListItem;
@@ -21,9 +22,14 @@ export default function Top3Item({top3ListItem} : Props) {
         ,writerNickname
         ,writerProfileImage} = top3ListItem;
 
+    //const navigator = useNavigate();
+
+    const onClickHandler = () =>{
+        //navigator(boardNumber);
+    }
 
     return (
-        <div className='top-3-list-item' style={{backgroundImage: `url(${boardTitleImage})`}}>
+        <div className='top-3-list-item' style={{backgroundImage: `url(${boardTitleImage})`}} onClick={onClickHandler}>
             <div className='top-3-list-item-main-box'>
                 <div className='top-3-list-item-top'>
                     <div className='top-3-list-item-profile-box'>
