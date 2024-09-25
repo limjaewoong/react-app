@@ -1,0 +1,51 @@
+* REACT 기초 정리
+
+1) 개발환경 설정
+1.Node.js : 자바스크립트로 network 어플리케이션을 개발할 수 있게 해주는 환경
+2.npm설치 node.js를 위한 node package manager 시스템
+3.node와 npm을 관리 할 수 있는 NVM을 설치하여 여러 버전을 동시에 사용 가능하도록 함
+- nvm 설치 준비
+https://github.com/coreybutler/nvm-windows/releases 접속하여 nvm-setup.exe 다운로드 후 설치 진행
+명령어 : 
+nvm list 설치된 버전 목록들 확인
+nvm install 18.17.1(버전)
+nvm use 18.17.1(버전 선택)
+node -v    node 버전 확인
+npm -v     npm 버전 확인
+npx --version npx 버전 확인
+
+2) 리액트란?
+- 사용자 인터페이스를 만들기위한 자바스크립트 UI라이브러리
+- SPA(single page application)을 빠르게 만들기 위한 UI인터페이스
+
+3) 리액트 장점/단점
+- 빠른 업데이트와 렌더링 속도
+- 내부적으로 Virtual Dom(가상의 돔) 사용 
+- component 기반
+- 재사용성(Reusability) 용이
+- 방대한 스터디 양
+- 높은 상태관리 복잡도
+
+* React project 생성
+- npx create-react-app board-front --template typescript
+- npx create-react-app . -template typescript	//현재폴더에 생성
+* next project 생성
+-npx create-next-app .
+-npx create-next-app board-front
+
+
+
+* react 문법
+1. forwardRef : React 컴포넌트에 ref prop을 넘겨서 그 내부에 있는 html 엘리먼트에 접근을 하게 해주는 함수
+
+
+
+
+
+
+
+
+
+
+
+
